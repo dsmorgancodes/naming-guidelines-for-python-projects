@@ -78,4 +78,4 @@ The best way to start any project is to pull your latest changes from GIT down o
 git pull origin main
 ```
 
-This command will pull the last commit from the origin. Pull test. 
+This command will pull the last commit from the origin. 
