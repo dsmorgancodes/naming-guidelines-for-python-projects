@@ -94,4 +94,20 @@ python3 -m pip install --upgrade -r requirements.txt
 The command -r requirements.txt is a great command as it updates our virtual environment withatever dependencies are contained in our requirements.txt file. This is a much much faster way of checking in dependencies when we run our venv. Using our requirement file will enable us to keep our dependencies in order. 
 
 ## Running Python
-First, we must initialize our virtual environment. Without a virtual environment running, python has no place to run our device. To start a virtual environemnt. We run a hard to remember command: I've actually made a txt file for this command that can be ran using the command below. 
+First, we must initialize our virtual environment. Without a virtual environment running, python has no place to run our device. To start a virtual environemnt. We run a hard to remember command:
+
+```shell
+source .venv/bin/activate
+python3 demo-script.py
+```
+
+This code tells the terminal to run in the .venv note that if we give our environment a different name when we run the initial command to create our .venv that we can actually have multiple virtual environments under different names in the same file. But, if a new name is added then it must be added to the .gitignore file. 
+
+To create a new environment we can simple run: 
+
+```shell
+python3 -m venv .venv
+```
+
+This string of code will create a viritual environment under .venv if we change the .venv to .virtualenvironment that would create an environment under a different name. By adding python3 at the beginning we are telling the computer to interepret the virtual environment as python3. 
+
