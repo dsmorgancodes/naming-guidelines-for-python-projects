@@ -78,4 +78,8 @@ The best way to start any project is to pull your latest changes from GIT down o
 git pull origin main
 ```
 
-This command will pull the last commit from the origin. 
+This command will pull the last commit from the origin. However, be sure to check what your branch is. On my mac it seems that the better command is: 
+
+```shell
+git pull origin HEAD
+```
