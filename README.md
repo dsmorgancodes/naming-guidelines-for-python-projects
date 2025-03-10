@@ -71,7 +71,8 @@ git push
 
 The details of your previous push request are remembered and reused. 
 
-# Starting a good enviroment. 
+# Step 4 - Starting Your Environment
+
 The best way to start any project is to pull your latest changes from GIT down onto you device. This will ensure that you are working with the latest version of your code. To do this run the command: 
 
 ```shell
@@ -83,3 +84,14 @@ This command will pull the last commit from the origin. However, be sure to chec
 ```shell
 git pull origin HEAD
 ```
+## Python Set Up
+First, we need to make sure that we have configured out dependencies. In this case, our requirements file requires us to install setuptools wheel and upgrade -r
+
+```shell
+python3 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade -r requirements.txt
+```
+The command -r requirements.txt is a great command as it updates our virtual environment withatever dependencies are contained in our requirements.txt file. This is a much much faster way of checking in dependencies when we run our venv. Using our requirement file will enable us to keep our dependencies in order. 
+
+## Running Python
+First, we must initialize our virtual environment. Without a virtual environment running, python has no place to run our device. To start a virtual environemnt. We run a hard to remember command: I've actually made a txt file for this command that can be ran using the command below. 
