@@ -13,7 +13,7 @@ During this step we will add two files that help GIT and future users of our cod
 ## What is requirements.txt
 requirement.txt is a txt file that contains the requirements for our project. It often tells us which version of python is best, or which tooling we will need to have installed to run the code. 
 
-# Step 3 - Connecting Push and Pull Requests
+# Step 3 - Push and Pull Requests
 In this step we run some basic git commands that push and pull code from git. 
 
 ## Pull Requests
@@ -70,3 +70,12 @@ git push
 ```
 
 The details of your previous push request are remembered and reused. 
+
+# Starting a good enviroment. 
+The best way to start any project is to pull your latest changes from GIT down onto you device. This will ensure that you are working with the latest version of your code. To do this run the command: 
+
+```shell
+git pull origin main
+```
+
+This command will pull the last commit from the origin. 
