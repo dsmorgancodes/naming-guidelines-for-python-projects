@@ -19,15 +19,15 @@ In this step we run some basic git commands that push and pull code from git.
 ## Pull Requests
 In most cases, the first step needed is a git pull. This is done by running the following commands in the terminal:
 
-'''shell
+```shell
 git pull origin main
-'''
+```
 
 But once this is run initially. It is usually enough to just run. Git assumes that we are pulling from the origin and from the main branch because that was our last request. 
 
-'''shell
+```shell
 git pull
-'''
+```
 Once we have made this initial pull we can review the output for updates and any conflicts. If we find conflicts, we should resolve these before we proceed. 
 
 ## Push Requests
@@ -36,36 +36,37 @@ A push request pushes our code to our github repository for future changes. A pu
 ### Add
 The command git add . is used to stage our changes. When we use the "." command we are staging our changes for every file in our repository. To do specific changes to specific files we can use the file path of the file or even the folder. This makes it possible for us to stage changes on only a single file or folder of our codebase instead of the whole thing.
 
-'''shell
+```shell
 git add .
-'''
+```
 
 ### Commit
 The command git commit -m "details of the git commit" tells git to commit the changes in git add to the repository. When we add the -m "content" this adds brief message to our labeled snapshot of what we are about to update. Consider this the final step before execution. 
 
-'''shell
+```shell
 commit -m "Added files to repository .gitignore and requirements.txt"
+```
 
 ### Push
 The command git push -u origin main pushes our changes added and then committed to the branch of our choosing. By adding -u we associate the local branch (our file) with the remote branch (the file to push to git). origin is just the standard name of the remote repository. main specifies which branch we are deploying our staged changes to. 
 
-'''shell 
+```shell 
 git -u origin main
-'''
+```
 
 ## Complete Push Request
 A complete push request consist of the above three commands - combined: 
 
-'''shell
+```shell
 git add .
 git commit -m "Message about this commit"
 git push -u origin main
-''' 
+``` 
 
 After your initial push, subsequent pushes run in the same terminal can be shortened to:
 
-'''shell
+```shell
 git push
-'''
+```
 
 The details of your previous push request are remembered and reused. 
