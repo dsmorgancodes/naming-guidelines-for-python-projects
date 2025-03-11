@@ -120,4 +120,23 @@ python3 -m venv .venv
 Then it is not strictly necessary for us to run it again
 Only to run the notebook we simply run it in the text editor
 
-We can skip this if the virtual environemnt is already running. 
+We can skip this if the virtual environemnt is already running. In general, if the kernel fails to recognize that we have the appropriate extensions installed all we have to do is run: 
+
+```shell
+python3 -m pip install --upgrade -r requirements.txt
+```
+
+This simple script will reupdate our venv with any extensions or libraries we needed. 
+
+# Final Note
+Be sure to always check which terminal you are running in and which python environment is being used. Running directly from the python home directory can potentially lead to conflicts such as: duplicate packages or installs of python versions. It's always best to run python in the virtual environment. You can activate your venv using the shell: 
+
+```shell
+source .venv/bin/activate
+```
+
+And you can deactivate it at any time by typing: 
+
+```shell
+deactivate
+```
