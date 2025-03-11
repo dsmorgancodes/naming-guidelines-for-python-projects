@@ -98,7 +98,7 @@ First, we must initialize our virtual environment. Without a virtual environment
 
 ```shell
 source .venv/bin/activate
-python3 demo-script.py
+python3 demo_script.py
 ```
 
 This code tells the terminal to run in the .venv note that if we give our environment a different name when we run the initial command to create our .venv that we can actually have multiple virtual environments under different names in the same file. But, if a new name is added then it must be added to the .gitignore file. 
@@ -111,3 +111,13 @@ python3 -m venv .venv
 
 This string of code will create a viritual environment under .venv if we change the .venv to .virtualenvironment that would create an environment under a different name. By adding python3 at the beginning we are telling the computer to interepret the virtual environment as python3. 
 
+## Running Jupyter Notebooks
+A jupyter notebook is a place to store code in a document. It's useful for writing up a narrative of a coding project that includes runnable examples of the code. We use the .ipynb extension to specify a jupyter notebook. We can run the notebook by creating a venv as before. We just need to make sure that our notebook is running in the appropriate .venv. This can be done by selecting the kernel option. If we have already ran:
+
+```shell
+python3 -m venv .venv
+```
+Then it is not strictly necessary for us to run it again
+Only to run the notebook we simply run it in the text editor
+
+We can skip this if the virtual environemnt is already running. 
